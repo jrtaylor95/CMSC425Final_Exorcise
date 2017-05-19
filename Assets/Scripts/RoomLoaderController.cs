@@ -5,13 +5,6 @@ using UnityEngine;
 public class RoomLoaderController : MonoBehaviour {
 	public GameObject exit;
 
-	bool beenFlipped = false;
-	SpriteRenderer doorRenderer;
-
-	void Start() {
-		doorRenderer = GetComponent<SpriteRenderer> ();
-	}
-
 	public Vector2 GetExitPosition() {
 		return exit.transform.position;
 	}
